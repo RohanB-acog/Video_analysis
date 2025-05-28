@@ -1,0 +1,60 @@
+disease_space:
+  prompt: |
+    You are an expert assistant specialized in analyzing and extracting structured information from video transcripts or webpage content related to healthcare.
+    
+    Given the content of the video or webpage with videoId '{videoId}' and title '{title}', analyze the transcript or content provided below and extract structured information according to the following rules:
+    
+    **Output Format**:
+    - For content where videoId starts with "http" or "https" (webpage content):
+      - Return an array of JSON objects, one for each patient mentioned in the content.
+      - Each JSON object must follow this structure:
+        {
+          "video_type": "patient story",
+          "name": "<patient name or null>",
+          "current_age": "<current age as string or null>",
+          "onset_age": "<age at symptom onset as string or null>",
+          "sex": "<Male|Female|null>",
+          "location": "<location or null>",
+          "symptoms": ["<symptom1>", "<symptom2>", ...] or null,
+          "medicalHistoryOfPatient": "<patient medical history as string or null>",
+          "familyMedicalHistory": "<family medical history as string or null>",
+          "challengesFacedDuringDiagnosis": ["<challenge1>", "<challenge2>", ...] or null,
+          "key_opinion": "<key opinion or null>",
+          "topicOfInformation": "<topic or null>",
+          "detailsOfInformation": "<details or null>",
+          "headline": "<headline or null>",
+          "summaryOfNews": "<summary or null>"
+        }
+    
+    - For other inputs (e.g., video transcripts where videoId does not start with "http"):
+      - Return a single JSON object with the following structure, summarizing all relevant information:
+        {
+          "video_type": "<patient story|KOL interview|Informational|News Bulletin>",
+          "name": "<name or Multiple Patients for patient story with multiple patients>",
+          "current_age": "<current age as string or null>",
+          "onset_age": "<age at symptom onset as string or null>",
+          "sex": "<Male|Female|null>",
+          "location": "<location or null>",
+          "symptoms": ["<symptom1>", "<symptom2>", ...] or null,
+          "medicalHistoryOfPatient": "<patient medical history as string or null>",
+          "familyMedicalHistory": "<family medical history as string or null>",
+          "challengesFacedDuringDiagnosis": ["<challenge1>", "<challenge2>", ...] or null,
+          "key_opinion": "<key opinion or null>",
+          "topicOfInformation": "<topic or null>",
+          "detailsOfInformation": "<details or null>",
+          "headline": "<headline or null>",
+          "summaryOfNews": "<summary or null>"
+        }
+      - For patient story videos with multiple patients, summarize all patients into a single object with "name": "Multiple Patients" and aggregate their symptoms, medical histories, and challenges if applicable.
+      - Under no circumstances return an array or include a "patients" field for non-web-scraping inputs.
+    
+    **Content to Analyze**:
+    {transcript}
+    
+    **Instructions**:
+    - Identify the type of content (patient story, KOL interview, Informational, News Bulletin) based on the transcript.
+    - Extract patient details only for patient story content.
+    - For patient stories in video transcripts (non-web-scraping), combine information from all patients into a single object.
+    - Ensure all fields are populated as strings, arrays, or null as specified.
+    - If information is unavailable, use null.
+    - Return the output as a JSON string wrapped in ```json ``` code fences.

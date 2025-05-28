@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  /* Primary colors */
+  --primary-color: #2a4e7a;
+  --primary-light: #4a7cb3;
+  --primary-dark: #1e3757;
+
+  /* Secondary colors */
+  --secondary-color: #f4a261;
+  --secondary-light: #f7c08a;
+  --secondary-dark: #e08b3e;
+
+  /* Status colors */
+  --success-color: #34c759;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+
+  /* Background colors */
+  --background-color: #f5f7fa;
+  --card-background: #ffffff;
+
+  /* Text colors */
+  --text-primary: #1a2a44;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+
+  /* Border colors */
+  --border-color: #d1d5db;
+  --border-light: #e5e7eb;
+
+  /* Shadow colors */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  background-color: var(--border-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 3px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}

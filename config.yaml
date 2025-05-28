@@ -1,0 +1,57 @@
+# Primary search term for the video content
+searchName: "multiple sclerosis"
+# Terms to include in the search query, targeting expert interviews and opinions
+searchTerms:
+
+  - "key opinion leader for multiple sclerosis"
+  - "interview"
+  - "doctor"
+  - "dr."
+  - "lectures"
+  - "leader"
+  - "physician"
+
+
+# Terms to exclude from the search results to avoid irrelevant content
+exclusionTerms:
+  # - "patient stories"
+  # - "patient journey"
+  # - "living with multiple sclerosis"
+  # - "parkinson*"
+  # - "alzheimer*"
+  # - "als"
+  # - "huntington*"
+  # - "epilepsy"
+  # - "dementia"
+  # - "microsoft"
+  # - "master of science"
+  # - "neurological disease"
+  # - "ms dhoni"
+  # - "miss"
+  # - "mrs"
+  # - "non health"
+  # - "not health related"
+  - "educational"
+  # - "commercial"
+  # - "advertisement"
+# YouTube channel IDs to search within (optional, left empty for general search)
+# channelName: 
+#   - ""
+#   - "UC-d9CktxCXwbNIi9UZEUUBg"
+#   - "UCxyiSz4m161Z6frOsFxJpgw"
+#   - "UCezP4NDgSDtbh0a3RrEL1OA"
+#   - "UCT3w-DaiHgEfhiQ4L0pE07g"
+# Minimum view count for videos to be included
+minViewCount: 1
+# Minimum duration (in seconds) for videos to be included
+minDuration: 60
+# Require videos to have non-empty title and description
+# hasContent: true
+# Start date for video publication (YYYY-MM-DD)
+startDate: "2015-01-01"
+# End date for video publication (YYYY-MM-DD)
+endDate: "2025-05-27"
+# Output file path for video metadata
+outputFile: "analysis_outputs/metadata_ms_kol_test.json"
+# Output file path for video IDs
+videoIdsFile: "analysis_outputs/videoids_ms_kol_test.json"

@@ -1,0 +1,72 @@
+[
+  {
+    "videoId": "wdK_eHjKQRE",
+    "video_type": "patient story",
+    "name": "Francesca Perezola",
+    "onset_age": null,
+    "current_age": null,
+    "sex": "female",
+    "location": null,
+    "symptoms": [
+      "difficulty walking",
+      "clumsiness",
+      "impaired speech",
+      "difficulty going up stairs",
+      "loss of balance"
+    ],
+    "medicalHistoryOfPatient": [
+      "Genetic disorder: Friedreich's Ataxia",
+      "Absence of lower limb reflexes",
+      "distal weakness in hands and feet",
+      "dizziness",
+      "scoliosis"
+    ],
+    "familyMedicalHistory": null,
+    "challengesFacedDuringDiagnosis": [
+      "Misunderstanding of symptoms by neurologist",
+      "Delayed diagnosis",
+      "Long period (3-4 years) of being in a guessing period"
+    ],
+    "key_opinion": null,
+    "topicOfInformation": null,
+    "detailsOfInformation": null,
+    "headline": null,
+    "summaryOfNews": null
+  },
+  {
+    "videoId": "53ULmr5bSIQ",
+    "video_type": "Informational",
+    "name": null,
+    "onset_age": null,
+    "current_age": null,
+    "sex": null,
+    "location": null,
+    "symptoms": null,
+    "medicalHistoryOfPatient": null,
+    "familyMedicalHistory": null,
+    "challengesFacedDuringDiagnosis": null,
+    "key_opinion": null,
+    "topicOfInformation": "Rare disease - FA (Friedreich's Ataxia)",
+    "detailsOfInformation": "The transcript discusses a rare disease, FA (Friedreich's Ataxia), which typically presents a protracted diagnostic journey with common misdiagnosis. It includes gait abnormalities, clumsiness, and the progression from neurological to cardiac symptoms. The disease affects energy production in the mitochondria, significantly impacting the heart and brain.",
+    "headline": null,
+    "summaryOfNews": null
+  },
+  {
+    "videoId": "NuphVdYuKDw",
+    "video_type": "Informational",
+    "name": null,
+    "onset_age": null,
+    "current_age": null,
+    "sex": null,
+    "location": null,
+    "symptoms": null,
+    "medicalHistoryOfPatient": null,
+    "familyMedicalHistory": null,
+    "challengesFacedDuringDiagnosis": null,
+    "key_opinion": null,
+    "topicOfInformation": "Gene therapy for Friedreich's ataxia",
+    "detailsOfInformation": "The transcript explains the role of mitochondria in cell function and how genetic mutations can lead to conditions like Friedreich's ataxia. It details the role of frataxin protein in ATP production and iron homeostasis, describing the outcomes of its deficiency. The potential of gene therapy is discussed, wherein genetic material is added to cells to compensate for faulty genes, along with the involvement of multiple stakeholders in developing this therapy and its uncertainties in outcomes.",
+    "headline": null,
+    "summaryOfNews": null
+  }
+]
